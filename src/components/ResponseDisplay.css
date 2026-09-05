@@ -1,0 +1,93 @@
+.response-card {
+  background: white;
+  border-left: 4px solid #667eea;
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.response-header {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.response-model {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.model-badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.response-time {
+  color: #999;
+  font-size: 0.85rem;
+}
+
+.response-query {
+  margin-bottom: 15px;
+}
+
+.response-query strong,
+.response-body strong {
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.response-query p,
+.response-body p {
+  color: #666;
+  margin: 0;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.response-body {
+  margin-bottom: 15px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 4px;
+}
+
+.response-footer {
+  display: flex;
+  gap: 10px;
+}
+
+.copy-btn {
+  padding: 8px 12px;
+  background: #f0f0f0;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.copy-btn:hover {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}

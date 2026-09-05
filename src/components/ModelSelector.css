@@ -1,0 +1,62 @@
+.model-selector {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.model-selector h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.models-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.model-card {
+  padding: 15px;
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.model-card:hover {
+  border-color: #667eea;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+.model-card.selected {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: #667eea;
+}
+
+.model-icon {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.model-card h3 {
+  margin: 8px 0;
+  font-size: 1.1rem;
+}
+
+.model-card p {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin: 8px 0;
+}
+
+.model-id {
+  font-size: 0.8rem;
+  opacity: 0.6;
+  font-family: monospace;
+}
